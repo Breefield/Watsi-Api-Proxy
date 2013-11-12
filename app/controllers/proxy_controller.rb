@@ -5,7 +5,7 @@ class ProxyController < ApplicationController
       passthrough = open(params[:url]).read if params[:url].present?
       render json: passthrough || {empty: true}, callback: params[:callback]
     rescue Exception => e
-      render text: e.message
+      render json: {error: e.message}
     end
   end
 end
