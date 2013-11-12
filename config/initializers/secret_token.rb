@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-WatsiApiProxy::Application.config.secret_key_base = ENV['SECRET_KEY_BASE']
+WatsiApiProxy::Application.config.secret_key_base = 'be33e0a5a206773e0eea2308af525f3c250b85dd342bee5b43be42518b60a045456f6c9a7316433fa7d71e8de6e3c81aada69c31c049b64f0051556a83796ae8'
